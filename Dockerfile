@@ -5,6 +5,8 @@ RUN apk update && apk add --no-cache \
     zfs \
     catatonit
 
+RUN zpool --version
+
 WORKDIR /app
 
 COPY entrypoint.sh /entrypoint.sh
