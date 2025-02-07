@@ -1,8 +1,7 @@
-FROM alpine:3.21.2
+FROM ubuntu:24.04
 
-RUN apk update && apk add --no-cache \
-    bash \
-    zfs \
+RUN apt-get update && apt-get install -y 
+    zfsutils-linux \
     catatonit
 
 WORKDIR /app
