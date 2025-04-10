@@ -129,3 +129,4 @@ func writeSysFsFile(path, content string) error {
 	}
 
 	return nil
+}
